@@ -1,4 +1,4 @@
-import { HashedObject, Identity } from 'hhs';
+import { HashedObject, Identity } from '@hyper-hyper-space/core';
 
 // A message from a given author, to be used within ChatRooms.
 
@@ -32,5 +32,7 @@ class ChatMessage extends HashedObject {
     }
 
 }
+
+HashedObject.registerClass(ChatMessage.className, ChatMessage);
 
 export { ChatMessage };

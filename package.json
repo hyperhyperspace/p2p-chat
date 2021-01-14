@@ -1,13 +1,14 @@
 {
   "name": "@hyper-hyper-space/p2p-chat",
   "version": "0.0.1",
-  "description": "A p2p chat client based on Hyper Hyper Space.",
+  "description": "A p2p chat library based on Hyper Hyper Space.",
   "main": "dist/index.js",
   "repository": "https://github.com/hyperhyperspace/p2p-chat.git",
   "author": "Santiago Bazerque",
   "license": "MIT",
   "private": false,
   "source": "src/index.ts",
+  "module": "dist/index.esm.js",
   "types": "decl/index.d.ts",
   "scripts": {
     "build": "npx microbundle-crl && npx tsc --declaration --outDir ./decl",
@@ -16,14 +17,14 @@
   "devDependencies": {
     "microbundle-crl": "^0.13.11",
     "typescript": "^3.9.6",
-    "hhs": "npm:@hyper-hyper-space/core@0.5.2",
+    "@hyper-hyper-space/core": "0.5.2",
     "jsencrypt": "^3.0.0-rc.1"
   },
   "dependencies": {
     "tslib": "^2.0.1"
   },
   "peerDependencies": {
-    "hhs": "npm:@hyper-hyper-space/core@0.5.2",
+    "@hyper-hyper-space/core": "0.5.2",
     "jsencrypt": "^3.0.0-rc.1"
   }
 

@@ -919,6 +919,19 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@hyper-hyper-space/core@0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@hyper-hyper-space/core/-/core-0.5.2.tgz#dab73582a999b637ba2fe3162740002c244cc357"
+  integrity sha512-/DYPnrqNwG8jbUIjwgVCRUj++HSKdAds+X8Z/FBqK9GH8eS6SJr5awCUwx5cOMOB71LJ+EFK7S6fZsKHqIhy/Q==
+  dependencies:
+    "@types/node" "^14.0.13"
+    chacha-js "^2.1.1"
+    get-random-values "^1.2.0"
+    idb "^5.0.4"
+    jsencrypt "^3.0.0-rc.1"
+    jshashes "^1.0.8"
+    tslib "^2.0.1"
+
 "@rollup/plugin-alias@^3.0.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-3.1.1.tgz#bb96cf37fefeb0a953a6566c284855c7d1cd290c"
@@ -1957,19 +1970,6 @@ hex-color-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
-
-"hhs@npm:@hyper-hyper-space/core@0.5.2":
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/@hyper-hyper-space/core/-/core-0.5.2.tgz#dab73582a999b637ba2fe3162740002c244cc357"
-  integrity sha512-/DYPnrqNwG8jbUIjwgVCRUj++HSKdAds+X8Z/FBqK9GH8eS6SJr5awCUwx5cOMOB71LJ+EFK7S6fZsKHqIhy/Q==
-  dependencies:
-    "@types/node" "^14.0.13"
-    chacha-js "^2.1.1"
-    get-random-values "^1.2.0"
-    idb "^5.0.4"
-    jsencrypt "^3.0.0-rc.1"
-    jshashes "^1.0.8"
-    tslib "^2.0.1"
 
 hsl-regex@^1.0.0:
   version "1.0.0"

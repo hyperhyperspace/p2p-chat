@@ -1,8 +1,8 @@
-import { PeerNode, Store } from 'hhs';
-import { HashedLiteral, HashedObject } from 'hhs';
-import { Identity } from 'hhs';
-import { MutableReference, MutableSet } from 'hhs';
-import { SpaceEntryPoint } from 'hhs';
+import { PeerNode } from '@hyper-hyper-space/core';
+import { HashedLiteral, HashedObject } from '@hyper-hyper-space/core';
+import { Identity } from '@hyper-hyper-space/core';
+import { MutableReference, MutableSet } from '@hyper-hyper-space/core';
+import { SpaceEntryPoint } from '@hyper-hyper-space/core';
 
 import { ChatMessage } from './ChatMessage';
 
@@ -71,13 +71,11 @@ class ChatRoom extends HashedObject implements SpaceEntryPoint {
             throw new Error('Cannot start sync: a local store has not been configured.')
         }
 
-        const localIdentity = resources.config.id as Identity;
-        const localStore    = resources.store as Store;
-        this._node = new PeerNode(localIdentity, localStore, resources.mesh, resources.config.linkupServer);
+        this._node = new PeerNode(resources);
         
         this._node.broadcast(this);
         this._node.sync(this);
-        
+
         this.messages?.loadAndWatchForChanges();
     }
     
