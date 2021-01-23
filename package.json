@@ -11,7 +11,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "npx tsc",
-    "clean": "rm -rf ./dist/*"
+    "clean": "rm -rf ./dist/*",
+    "winclean": "if exist dist (rmdir dist /s /q) && mkdir dist"
   },
   "devDependencies": {
     "typescript": "^3.9.6",
