@@ -8,14 +8,12 @@
   "license": "MIT",
   "private": false,
   "source": "src/index.ts",
-  "module": "dist/index.esm.js",
-  "types": "decl/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npx microbundle-crl && npx tsc --declaration --outDir ./decl",
-    "clean": "rm -rf ./decl/* ./dist/*"
+    "build": "npx tsc",
+    "clean": "rm -rf ./dist/*"
   },
   "devDependencies": {
-    "microbundle-crl": "^0.13.11",
     "typescript": "^3.9.6",
     "@hyper-hyper-space/core": "0.6.1",
     "jsencrypt": "^3.0.0-rc.1"
