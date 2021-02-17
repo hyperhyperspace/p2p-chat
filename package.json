@@ -17,14 +17,14 @@
   "devDependencies": {
     "typescript": "^4.1.2",
     "@hyper-hyper-space/core": "0.6.2",
-    "jsencrypt": "^3.0.0-rc.1"
+    "jsencrypt": "3.0.0-rc.1"
   },
   "dependencies": {
     "tslib": "^2.0.1"
   },
   "peerDependencies": {
     "@hyper-hyper-space/core": "0.6.2",
-    "jsencrypt": "^3.0.0-rc.1"
+    "jsencrypt": "3.0.0-rc.1"
   }
 
 }
