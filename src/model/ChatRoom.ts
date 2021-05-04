@@ -33,7 +33,7 @@ class ChatRoom extends HashedObject implements SpaceEntryPoint {
         
     }
 
-    validate(_references: Map<string, HashedObject>): boolean {
+    async validate(_references: Map<string, HashedObject>): Promise<boolean> {
         return  this.getId() !== undefined &&
                 this.checkDerivedField('topic') &&
                 this.checkDerivedField('messages');

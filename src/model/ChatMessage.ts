@@ -27,7 +27,7 @@ class ChatMessage extends HashedObject {
         
     }
 
-    validate(_references: Map<string, HashedObject>): boolean {
+    async validate(_references: Map<string, HashedObject>): Promise<boolean> {
         return this.text !== undefined && this.getAuthor() !== undefined && this.timestamp !== undefined;
     }
 
