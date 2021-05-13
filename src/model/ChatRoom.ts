@@ -76,6 +76,7 @@ class ChatRoom extends HashedObject implements SpaceEntryPoint {
         this._node.broadcast(this);
         this._node.sync(this);
 
+        this.topic?.loadAndWatchForChanges();
         this.messages?.loadAndWatchForChanges();
     }
     
