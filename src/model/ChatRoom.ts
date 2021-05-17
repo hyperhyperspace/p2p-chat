@@ -17,16 +17,12 @@ class ChatRoom extends HashedObject implements SpaceEntryPoint {
 
     _node?: PeerNode;
 
-    constructor(topic?: string) {
+    constructor() {
         super();
-        if (topic !== undefined) {
-            this.setRandomId();
+        this.setRandomId();
 
-            this.addDerivedField('topic', new MutableReference());
-            this.addDerivedField('messages', new MutableSet());
-
-            this.topic?.setValue(new HashedLiteral(topic));
-        }
+        this.addDerivedField('topic', new MutableReference());
+        this.addDerivedField('messages', new MutableSet());
     }
 
     init(): void {
