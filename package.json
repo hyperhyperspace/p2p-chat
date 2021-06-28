@@ -1,6 +1,6 @@
 {
   "name": "@hyper-hyper-space/p2p-chat",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A p2p chat library based on Hyper Hyper Space.",
   "main": "dist/index.js",
   "repository": "https://github.com/hyperhyperspace/p2p-chat.git",
@@ -16,13 +16,13 @@
   },
   "devDependencies": {
     "typescript": "^4.1.2",
-    "@hyper-hyper-space/core": "0.7.0"
+    "@hyper-hyper-space/core": "0.8.0"
   },
   "dependencies": {
     "tslib": "^2.0.1"
   },
   "peerDependencies": {
-    "@hyper-hyper-space/core": "0.7.0"
+    "@hyper-hyper-space/core": "0.8.0"
   }
 
 }
